@@ -1,13 +1,15 @@
-# Dart & Flutter Lehrplan
+# Dart & Flutter Lehrplan (Frontend & Backend)
 
 > **Zielgruppe:** Entwickler mit Vorkenntnissen in C++, JavaScript/HTML/CSS und Python.
 > Grundlegende Programmierkonzepte (Variablen, Schleifen, Funktionen, OOP-Basics) werden als bekannt vorausgesetzt.
 
-> **Zeitaufwand:** 2 Stunden pro Lerneinheit. Insgesamt 44 Lerneinheiten (~88 Stunden).
+> **Zeitaufwand:** 2 Stunden pro Lerneinheit. Insgesamt 76 Lerneinheiten (~152 Stunden).
 
 ---
 
 ## Übersicht
+
+### Teil A: Frontend (Dart & Flutter)
 
 | Block | Schwerpunkt | Lerneinheiten | Zeitraum |
 |-------|-------------|---------------|----------|
@@ -15,6 +17,20 @@
 | **2** | Flutter -- Grundlagen | 10 Einheiten | ~2 Wochen |
 | **3** | Flutter -- Fortgeschritten | 12 Einheiten | ~2,5 Wochen |
 | **4** | Profi-Themen & Projekt | 12 Einheiten | ~2,5 Wochen |
+
+### Teil B: Backend (Dart Server)
+
+| Block | Schwerpunkt | Lerneinheiten | Zeitraum |
+|-------|-------------|---------------|----------|
+| **5** | Server-Grundlagen | 6 Einheiten | ~1 Woche |
+| **6** | REST API Entwicklung | 8 Einheiten | ~1,5 Wochen |
+| **7** | Datenbanken | 8 Einheiten | ~1,5 Wochen |
+| **8** | Auth & Sicherheit | 6 Einheiten | ~1 Woche |
+| **9** | Produktion & Projekt | 4 Einheiten | ~1 Woche |
+
+---
+
+# Teil A: Frontend (Dart & Flutter)
 
 ---
 
@@ -402,6 +418,349 @@ Der letzte Block deckt fortgeschrittene Themen ab und endet mit einem Abschlussp
 
 ---
 
+# Teil B: Backend (Dart Server)
+
+> **Voraussetzung:** Abschluss von Block 1 (Dart-Grundlagen) oder vergleichbare Dart-Kenntnisse.
+
+---
+
+## Block 5 -- Server-Grundlagen
+
+In diesem Block lernst du, wie HTTP-Server in Dart funktionieren und wie du mit dem Shelf-Framework professionelle APIs entwickelst.
+
+### Einheit 5.1: Dart auf dem Server (2h)
+
+**Themen:** Dart außerhalb von Flutter, `dart:io`, HTTP-Grundlagen, einfacher HTTP-Server, Request/Response Lifecycle.
+
+- [Lehrstoff](block_5_server_grundlagen/01_dart_server/lehrstoff.md)
+- [Ressourcen](block_5_server_grundlagen/01_dart_server/ressourcen.md)
+- [Übung](block_5_server_grundlagen/01_dart_server/uebung.md)
+- [Lösung](block_5_server_grundlagen/01_dart_server/loesung.md)
+
+### Einheit 5.2: Shelf Framework Basics (2h)
+
+**Themen:** Shelf-Architektur, Handler, Request/Response-Objekte, Pipeline, Server starten.
+
+- [Lehrstoff](block_5_server_grundlagen/02_shelf_basics/lehrstoff.md)
+- [Ressourcen](block_5_server_grundlagen/02_shelf_basics/ressourcen.md)
+- [Übung](block_5_server_grundlagen/02_shelf_basics/uebung.md)
+- [Lösung](block_5_server_grundlagen/02_shelf_basics/loesung.md)
+
+### Einheit 5.3: Routing mit shelf_router (2h)
+
+**Themen:** `shelf_router` Package, Route-Definition, URL-Parameter, Query-Parameter, Route-Gruppen.
+
+- [Lehrstoff](block_5_server_grundlagen/03_routing/lehrstoff.md)
+- [Ressourcen](block_5_server_grundlagen/03_routing/ressourcen.md)
+- [Übung](block_5_server_grundlagen/03_routing/uebung.md)
+- [Lösung](block_5_server_grundlagen/03_routing/loesung.md)
+
+### Einheit 5.4: Middleware (2h)
+
+**Themen:** Middleware-Konzept, Logging, CORS, Request-Transformation, Middleware-Ketten, Error-Handling-Middleware.
+
+- [Lehrstoff](block_5_server_grundlagen/04_middleware/lehrstoff.md)
+- [Ressourcen](block_5_server_grundlagen/04_middleware/ressourcen.md)
+- [Übung](block_5_server_grundlagen/04_middleware/uebung.md)
+- [Lösung](block_5_server_grundlagen/04_middleware/loesung.md)
+
+### Einheit 5.5: Konfiguration & Umgebungsvariablen (2h)
+
+**Themen:** Environment Variables, `.env`-Dateien, Konfigurationsklassen, Unterschiedliche Umgebungen (dev/prod).
+
+- [Lehrstoff](block_5_server_grundlagen/05_konfiguration/lehrstoff.md)
+- [Ressourcen](block_5_server_grundlagen/05_konfiguration/ressourcen.md)
+- [Übung](block_5_server_grundlagen/05_konfiguration/uebung.md)
+- [Lösung](block_5_server_grundlagen/05_konfiguration/loesung.md)
+
+### Einheit 5.6: Projekt-Struktur & Architektur (2h)
+
+**Themen:** Ordnerstruktur für Backend-Projekte, Layered Architecture, Dependency Injection, Service-Pattern.
+
+- [Lehrstoff](block_5_server_grundlagen/06_projektstruktur/lehrstoff.md)
+- [Ressourcen](block_5_server_grundlagen/06_projektstruktur/ressourcen.md)
+- [Übung](block_5_server_grundlagen/06_projektstruktur/uebung.md)
+- [Lösung](block_5_server_grundlagen/06_projektstruktur/loesung.md)
+
+---
+
+## Block 6 -- REST API Entwicklung
+
+Dieser Block behandelt die Entwicklung professioneller REST APIs mit Best Practices für Design, Validierung und Error Handling.
+
+### Einheit 6.1: REST-Prinzipien & API-Design (2h)
+
+**Themen:** REST-Architektur, HTTP-Methoden, Ressourcen-Naming, API-Versionierung, HATEOAS.
+
+- [Lehrstoff](block_6_rest_api/01_rest_prinzipien/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/01_rest_prinzipien/ressourcen.md)
+- [Übung](block_6_rest_api/01_rest_prinzipien/uebung.md)
+- [Lösung](block_6_rest_api/01_rest_prinzipien/loesung.md)
+
+### Einheit 6.2: JSON Serialisierung (2h)
+
+**Themen:** `dart:convert`, Model-Klassen, `fromJson`/`toJson`, `json_serializable`, Nested Objects, Listen.
+
+- [Lehrstoff](block_6_rest_api/02_json_serialisierung/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/02_json_serialisierung/ressourcen.md)
+- [Übung](block_6_rest_api/02_json_serialisierung/uebung.md)
+- [Lösung](block_6_rest_api/02_json_serialisierung/loesung.md)
+
+### Einheit 6.3: Request Body Parsing (2h)
+
+**Themen:** JSON-Body lesen, Form-Daten, Multipart/File-Uploads, Content-Type Handling.
+
+- [Lehrstoff](block_6_rest_api/03_request_body/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/03_request_body/ressourcen.md)
+- [Übung](block_6_rest_api/03_request_body/uebung.md)
+- [Lösung](block_6_rest_api/03_request_body/loesung.md)
+
+### Einheit 6.4: CRUD-Operationen (2h)
+
+**Themen:** Create, Read, Update, Delete implementieren, HTTP-Statuscodes, Response-Formate.
+
+- [Lehrstoff](block_6_rest_api/04_crud/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/04_crud/ressourcen.md)
+- [Übung](block_6_rest_api/04_crud/uebung.md)
+- [Lösung](block_6_rest_api/04_crud/loesung.md)
+
+### Einheit 6.5: Input-Validierung (2h)
+
+**Themen:** Validierungsstrategien, Custom Validators, Fehler-Aggregation, Schema-Validierung.
+
+- [Lehrstoff](block_6_rest_api/05_validierung/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/05_validierung/ressourcen.md)
+- [Übung](block_6_rest_api/05_validierung/uebung.md)
+- [Lösung](block_6_rest_api/05_validierung/loesung.md)
+
+### Einheit 6.6: Error Handling & HTTP-Statuscodes (2h)
+
+**Themen:** Exception-Hierarchie, Error-Response-Format, Global Error Handler, Logging.
+
+- [Lehrstoff](block_6_rest_api/06_error_handling/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/06_error_handling/ressourcen.md)
+- [Übung](block_6_rest_api/06_error_handling/uebung.md)
+- [Lösung](block_6_rest_api/06_error_handling/loesung.md)
+
+### Einheit 6.7: Pagination & Filtering (2h)
+
+**Themen:** Offset/Limit-Pagination, Cursor-Pagination, Sortierung, Filter-Parameter, Meta-Informationen.
+
+- [Lehrstoff](block_6_rest_api/07_pagination/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/07_pagination/ressourcen.md)
+- [Übung](block_6_rest_api/07_pagination/uebung.md)
+- [Lösung](block_6_rest_api/07_pagination/loesung.md)
+
+### Einheit 6.8: API-Dokumentation (2h)
+
+**Themen:** OpenAPI/Swagger, Automatische Dokumentation, Postman Collections, API-Testing-Tools.
+
+- [Lehrstoff](block_6_rest_api/08_dokumentation/lehrstoff.md)
+- [Ressourcen](block_6_rest_api/08_dokumentation/ressourcen.md)
+- [Übung](block_6_rest_api/08_dokumentation/uebung.md)
+- [Lösung](block_6_rest_api/08_dokumentation/loesung.md)
+
+---
+
+## Block 7 -- Datenbanken
+
+Dieser Block behandelt die Anbindung relationaler und NoSQL-Datenbanken an deine Dart-Backend-Anwendung.
+
+### Einheit 7.1: SQL-Grundlagen & PostgreSQL Setup (2h)
+
+**Themen:** PostgreSQL installieren, SQL-Basics (SELECT, INSERT, UPDATE, DELETE), pgAdmin, Docker-Setup.
+
+- [Lehrstoff](block_7_datenbanken/01_sql_grundlagen/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/01_sql_grundlagen/ressourcen.md)
+- [Übung](block_7_datenbanken/01_sql_grundlagen/uebung.md)
+- [Lösung](block_7_datenbanken/01_sql_grundlagen/loesung.md)
+
+### Einheit 7.2: PostgreSQL mit Dart (2h)
+
+**Themen:** `postgres` Package, Connection Pool, Prepared Statements, Transaktionen.
+
+- [Lehrstoff](block_7_datenbanken/02_postgres_dart/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/02_postgres_dart/ressourcen.md)
+- [Übung](block_7_datenbanken/02_postgres_dart/uebung.md)
+- [Lösung](block_7_datenbanken/02_postgres_dart/loesung.md)
+
+### Einheit 7.3: Repository-Pattern für Datenbanken (2h)
+
+**Themen:** Repository-Abstraktion, Interface-basiertes Design, Unit of Work, Testbarkeit.
+
+- [Lehrstoff](block_7_datenbanken/03_repository_pattern/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/03_repository_pattern/ressourcen.md)
+- [Übung](block_7_datenbanken/03_repository_pattern/uebung.md)
+- [Lösung](block_7_datenbanken/03_repository_pattern/loesung.md)
+
+### Einheit 7.4: Relationale Modellierung (2h)
+
+**Themen:** Primärschlüssel, Fremdschlüssel, 1:1, 1:n, n:m Beziehungen, JOINs, Normalisierung.
+
+- [Lehrstoff](block_7_datenbanken/04_relationale_modellierung/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/04_relationale_modellierung/ressourcen.md)
+- [Übung](block_7_datenbanken/04_relationale_modellierung/uebung.md)
+- [Lösung](block_7_datenbanken/04_relationale_modellierung/loesung.md)
+
+### Einheit 7.5: Migrations (2h)
+
+**Themen:** Schema-Versionierung, Migration-Tools, Up/Down Migrations, Seed-Daten.
+
+- [Lehrstoff](block_7_datenbanken/05_migrations/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/05_migrations/ressourcen.md)
+- [Übung](block_7_datenbanken/05_migrations/uebung.md)
+- [Lösung](block_7_datenbanken/05_migrations/loesung.md)
+
+### Einheit 7.6: NoSQL mit MongoDB (2h)
+
+**Themen:** MongoDB-Grundlagen, Dokumentenmodell, `mongo_dart` Package, CRUD-Operationen.
+
+- [Lehrstoff](block_7_datenbanken/06_mongodb/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/06_mongodb/ressourcen.md)
+- [Übung](block_7_datenbanken/06_mongodb/uebung.md)
+- [Lösung](block_7_datenbanken/06_mongodb/loesung.md)
+
+### Einheit 7.7: Queries & Aggregationen (2h)
+
+**Themen:** Komplexe Queries, Aggregation Pipeline (MongoDB), Window Functions (PostgreSQL), Indizes.
+
+- [Lehrstoff](block_7_datenbanken/07_queries_aggregationen/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/07_queries_aggregationen/ressourcen.md)
+- [Übung](block_7_datenbanken/07_queries_aggregationen/uebung.md)
+- [Lösung](block_7_datenbanken/07_queries_aggregationen/loesung.md)
+
+### Einheit 7.8: Caching mit Redis (2h)
+
+**Themen:** Redis-Grundlagen, `redis` Package, Caching-Strategien, Session-Storage, Pub/Sub.
+
+- [Lehrstoff](block_7_datenbanken/08_redis_caching/lehrstoff.md)
+- [Ressourcen](block_7_datenbanken/08_redis_caching/ressourcen.md)
+- [Übung](block_7_datenbanken/08_redis_caching/uebung.md)
+- [Lösung](block_7_datenbanken/08_redis_caching/loesung.md)
+
+---
+
+## Block 8 -- Authentifizierung & Sicherheit
+
+Dieser Block behandelt alle Aspekte der Absicherung deiner API.
+
+### Einheit 8.1: Passwort-Hashing & Benutzer-Registrierung (2h)
+
+**Themen:** Sichere Passwort-Speicherung, bcrypt/argon2, Salt, User-Model, Registrierungsflow.
+
+- [Lehrstoff](block_8_auth_sicherheit/01_passwort_hashing/lehrstoff.md)
+- [Ressourcen](block_8_auth_sicherheit/01_passwort_hashing/ressourcen.md)
+- [Übung](block_8_auth_sicherheit/01_passwort_hashing/uebung.md)
+- [Lösung](block_8_auth_sicherheit/01_passwort_hashing/loesung.md)
+
+### Einheit 8.2: JWT-Authentifizierung (2h)
+
+**Themen:** JWT-Struktur, Access Tokens, Refresh Tokens, Token-Validierung, `dart_jsonwebtoken`.
+
+- [Lehrstoff](block_8_auth_sicherheit/02_jwt/lehrstoff.md)
+- [Ressourcen](block_8_auth_sicherheit/02_jwt/ressourcen.md)
+- [Übung](block_8_auth_sicherheit/02_jwt/uebung.md)
+- [Lösung](block_8_auth_sicherheit/02_jwt/loesung.md)
+
+### Einheit 8.3: Auth-Middleware & geschützte Routen (2h)
+
+**Themen:** Authentication Middleware, Authorization, Role-Based Access Control (RBAC), Guards.
+
+- [Lehrstoff](block_8_auth_sicherheit/03_auth_middleware/lehrstoff.md)
+- [Ressourcen](block_8_auth_sicherheit/03_auth_middleware/ressourcen.md)
+- [Übung](block_8_auth_sicherheit/03_auth_middleware/uebung.md)
+- [Lösung](block_8_auth_sicherheit/03_auth_middleware/loesung.md)
+
+### Einheit 8.4: OAuth 2.0 & Social Login (2h)
+
+**Themen:** OAuth 2.0 Flow, Google/GitHub Login, Token-Exchange, Provider-Integration.
+
+- [Lehrstoff](block_8_auth_sicherheit/04_oauth/lehrstoff.md)
+- [Ressourcen](block_8_auth_sicherheit/04_oauth/ressourcen.md)
+- [Übung](block_8_auth_sicherheit/04_oauth/uebung.md)
+- [Lösung](block_8_auth_sicherheit/04_oauth/loesung.md)
+
+### Einheit 8.5: API-Sicherheit (2h)
+
+**Themen:** CORS richtig konfigurieren, Rate Limiting, Input Sanitization, SQL Injection Prevention, HTTPS.
+
+- [Lehrstoff](block_8_auth_sicherheit/05_api_sicherheit/lehrstoff.md)
+- [Ressourcen](block_8_auth_sicherheit/05_api_sicherheit/ressourcen.md)
+- [Übung](block_8_auth_sicherheit/05_api_sicherheit/uebung.md)
+- [Lösung](block_8_auth_sicherheit/05_api_sicherheit/loesung.md)
+
+### Einheit 8.6: Testing der Auth-Schicht (2h)
+
+**Themen:** Unit Tests für Auth, Integration Tests, Mock-Authentication, Test-Fixtures.
+
+- [Lehrstoff](block_8_auth_sicherheit/06_auth_testing/lehrstoff.md)
+- [Ressourcen](block_8_auth_sicherheit/06_auth_testing/ressourcen.md)
+- [Übung](block_8_auth_sicherheit/06_auth_testing/uebung.md)
+- [Lösung](block_8_auth_sicherheit/06_auth_testing/loesung.md)
+
+---
+
+## Block 9 -- Produktion & Abschlussprojekt
+
+Der letzte Block behandelt Produktions-Themen und endet mit einem Abschlussprojekt.
+
+### Einheit 9.1: WebSockets & Real-time (2h)
+
+**Themen:** WebSocket-Protokoll, `shelf_web_socket`, Bidirektionale Kommunikation, Chat-Beispiel.
+
+- [Lehrstoff](block_9_produktion/01_websockets/lehrstoff.md)
+- [Ressourcen](block_9_produktion/01_websockets/ressourcen.md)
+- [Übung](block_9_produktion/01_websockets/uebung.md)
+- [Lösung](block_9_produktion/01_websockets/loesung.md)
+
+### Einheit 9.2: Background Jobs & Scheduling (2h)
+
+**Themen:** Async Tasks, Job Queues, Scheduled Tasks, Cron-Jobs, Worker-Pattern.
+
+- [Lehrstoff](block_9_produktion/02_background_jobs/lehrstoff.md)
+- [Ressourcen](block_9_produktion/02_background_jobs/ressourcen.md)
+- [Übung](block_9_produktion/02_background_jobs/uebung.md)
+- [Lösung](block_9_produktion/02_background_jobs/loesung.md)
+
+### Einheit 9.3: Logging & Monitoring (2h)
+
+**Themen:** Strukturiertes Logging, Log-Level, Monitoring-Metriken, Health Checks, Alerting.
+
+- [Lehrstoff](block_9_produktion/03_logging_monitoring/lehrstoff.md)
+- [Ressourcen](block_9_produktion/03_logging_monitoring/ressourcen.md)
+- [Übung](block_9_produktion/03_logging_monitoring/uebung.md)
+- [Lösung](block_9_produktion/03_logging_monitoring/loesung.md)
+
+### Einheit 9.4: Deployment & Docker (2h)
+
+**Themen:** Docker-Container, Dockerfile, Docker Compose, Cloud-Deployment (Railway/Fly.io), CI/CD.
+
+- [Lehrstoff](block_9_produktion/04_deployment/lehrstoff.md)
+- [Ressourcen](block_9_produktion/04_deployment/ressourcen.md)
+- [Übung](block_9_produktion/04_deployment/uebung.md)
+- [Lösung](block_9_produktion/04_deployment/loesung.md)
+
+### Einheit 9.5: Backend-Abschlussprojekt (8-12h)
+
+**Projekt:** Eine vollständige Task-Management-API mit:
+
+- User-Authentifizierung (JWT)
+- Projekte & Tasks (CRUD)
+- Team-Mitglieder & Berechtigungen
+- PostgreSQL-Datenbank
+- Redis-Caching
+- WebSocket für Real-time Updates
+- Docker-Deployment
+- API-Dokumentation
+- Vollständige Test-Suite
+
+- [Projektbeschreibung](block_9_produktion/05_abschlussprojekt/lehrstoff.md)
+- [Ressourcen](block_9_produktion/05_abschlussprojekt/ressourcen.md)
+- [Aufgabenstellung](block_9_produktion/05_abschlussprojekt/uebung.md)
+- [Referenzlösung](block_9_produktion/05_abschlussprojekt/loesung.md)
+
+---
+
 ## Lerneinheit-Struktur (2 Stunden)
 
 | Phase | Dauer | Inhalt |
@@ -414,15 +773,27 @@ Der letzte Block deckt fortgeschrittene Themen ab und endet mit einem Abschlussp
 
 ## Empfohlene Werkzeuge
 
+### Frontend (Flutter)
+
 - **IDE:** VS Code mit Dart & Flutter Extensions oder Android Studio
 - **Dart Playground:** [DartPad](https://dartpad.dev) -- ideal für Block 1
 - **Emulator:** Android Emulator oder iOS Simulator
 - **Versionskontrolle:** Git
 - **Terminal:** Flutter CLI (`flutter doctor`, `flutter create`, `flutter run`)
 
+### Backend (Dart Server)
+
+- **IDE:** VS Code mit Dart Extension
+- **HTTP-Client:** Postman, Insomnia, oder curl
+- **Datenbank:** PostgreSQL + pgAdmin, MongoDB Compass
+- **Container:** Docker Desktop
+- **Terminal:** Dart CLI (`dart run`, `dart compile`)
+
 ---
 
 ## Voraussetzungen installieren
+
+### Flutter (Frontend)
 
 ```bash
 # Flutter SDK installieren (siehe https://docs.flutter.dev/get-started/install)
@@ -435,6 +806,33 @@ cd mein_projekt
 flutter run
 ```
 
+### Dart Server (Backend)
+
+```bash
+# Dart SDK (mindestens 3.0)
+dart --version
+
+# Neues Server-Projekt erstellen
+dart create -t server-shelf my_api
+cd my_api
+dart run bin/server.dart
+```
+
 ---
 
-> **Tipp:** Nutze DartPad (https://dartpad.dev) für die Dart-Übungen in Block 1. Ab Block 2 arbeitest du mit echten Flutter-Projekten in deiner IDE.
+## Docker für Datenbanken (Backend)
+
+```bash
+# PostgreSQL
+docker run -d -p 5432:5432 -e POSTGRES_PASSWORD=postgres postgres:15
+
+# MongoDB
+docker run -d -p 27017:27017 mongo:6
+
+# Redis
+docker run -d -p 6379:6379 redis:7
+```
+
+---
+
+> **Tipp:** Nutze DartPad (https://dartpad.dev) für die Dart-Übungen in Block 1. Ab Block 2 arbeitest du mit echten Flutter-Projekten. Für Backend-Entwicklung ab Block 5 nutze Docker für die Datenbanken.
