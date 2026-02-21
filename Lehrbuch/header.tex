@@ -1,0 +1,78 @@
+% Unicode-Unterstützung (lualatex)
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{DejaVu Sans Mono}[Scale=0.85]
+
+% Farben
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{2563EB}
+\definecolor{codegreen}{HTML}{16A34A}
+\definecolor{codegray}{HTML}{6B7280}
+\definecolor{codebg}{HTML}{F3F4F6}
+\definecolor{darkblue}{HTML}{1E3A5F}
+\definecolor{accentblue}{HTML}{3B82F6}
+
+% Hyperlinks (klickbares Inhaltsverzeichnis) - hyperref wird von pandoc geladen
+\AtBeginDocument{%
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=linkblue,
+    bookmarks=true,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    bookmarksopenlevel=2,
+    pdfstartview=FitH,
+    pdftitle={Dart & Flutter -- Lehrbuch},
+    pdfauthor={Lehrplan},
+    pdfsubject={Frontend & Backend Entwicklung mit Dart und Flutter}
+  }%
+}
+
+% Kopf- und Fusszeilen
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% Bessere Tabellen
+\usepackage{booktabs}
+\usepackage{longtable}
+
+% Inhaltsverzeichnis-Tiefe
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{3}
+
+% Code-Blöcke: Zeilenumbruch bei langen Zeilen
+\usepackage{fvextra}
+\fvset{breaklines=true, breakanywhere=true, breaksymbolright=\small\ensuremath{\hookrightarrow}}
+\usepackage{framed}
+\definecolor{shadecolor}{HTML}{F8F9FA}
+
+% Deckblatt
+\usepackage{titling}
+
+% Kapitel-Styling
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{darkblue}}
+  {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+
+% Part-Styling
+\titleformat{\part}[display]
+  {\centering\normalfont\Huge\bfseries\color{darkblue}}
+  {\partname\ \thepart}{20pt}{\huge}
+
+% Bessere Listen
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
